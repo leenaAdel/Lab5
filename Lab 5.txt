@@ -1,0 +1,88 @@
+69 ?- father(homer, bart).
+true.
+
+70 ?- father(X, lisa).
+X = homer .
+
+71 ?- mother(marge, lisa).
+true.
+
+72 ?- mother(X, ling).
+X = selma.
+
+73 ?- son(bart, homer).
+true.
+
+74 ?- son(X, abraham).
+X = herb ;
+X = homer.
+
+75 ?- daughter(lisa, marge).
+true.
+
+76 ?- daughter(X, clancy).
+X = marge ;
+X = patty ;
+X = selma.
+
+77 ?- brother(herb, homer).
+true.
+
+78 ?- brother(X, lisa).
+X = bart .
+
+79 ?- sister(patty, marge).
+true ;
+true.
+
+80 ?- sister(X, bart).
+X = lisa ;
+X = maggie ;
+X = lisa ;
+X = maggie .
+
+81 ?- grandfather(abraham, bart).
+true.
+
+82 ?- grandfather(X, ling).
+X = clancy .
+
+83 ?- aunt(patty, bart).
+true ;
+true .
+
+84 ?-  aunt(X, ling).
+X = marge ;
+X = patty ;
+X = marge ;
+X = patty .
+
+85 ?- uncle(herb, bart).
+true.
+
+86 ?- uncle(X, lisa).
+X = herb .
+
+87 ?- cousin(ling, bart).
+true ;
+true.
+
+88 ?- cousin(X, ling).
+X = bart ;
+X = bart ;
+X = lisa ;
+X = lisa ;
+X = maggie ;
+X = maggie ;
+
+89 ?- ancestor(abraham, bart).
+true ;
+
+90 ?- ancestor(clancy, X).
+X = marge ;
+X = patty ;
+X = selma ;
+X = bart ;
+X = lisa ;
+X = maggie ;
+X = ling .
